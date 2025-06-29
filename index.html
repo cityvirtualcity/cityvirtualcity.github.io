@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電脳風街</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #232e3e; /* 濃いブラウン */
+            margin: 0;
+            padding: 0;
+            background-color: #c9d8f3; /* 全体の背景 */
+        }
+        header {
+            background: #4a5c97; /* ヘッダー背景 */
+            color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+        .container {
+            max-width: 960px;
+            margin: 2em auto;
+            padding: 1.5em;
+            background: #fff;
+            border-radius: 10px;
+        }
+        .app-title {
+            text-align: left;
+            margin-bottom: 1.5em;
+        }
+        .app-title h2 {
+            font-size: 2rem;
+            color: #4e342e;
+            margin: 0;
+        }
+        .app-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .app-images {
+            flex: 0;
+            text-align: center;
+        }
+        .app-images img {
+            max-width: 300px;
+            margin: 0.5em 0;
+            border-radius: 10px;
+
+        }
+        .app-details {
+            flex: 2;
+            margin-left: 2em;
+            margin-right: 1em;
+            margin-top: 1em;
+        }
+        .app-details p {
+            font-size: 1rem;
+            color: #3e2723;
+        }
+        .app-download {
+            margin-top: 1.5em;
+            text-align: center;
+        }
+        .app-download img {
+            width: 200px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: #4a5c97;
+            color: #fff;
+            margin-top: 2.5em;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #e0e0e0;
+        }
+
+        /* メディアクエリで画像サイズをデバイスごとに調整 */
+        @media (max-width: 1500px) {
+            .app-images img {
+                max-width: 300px;
+            }
+            .app-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .app-details {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .app-images img {
+                max-width: 300px;
+            }
+            .app-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .app-details {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .app-images img {
+                max-width: 200px;
+            }
+            .app-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .app-details {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .app-title h2 {
+                font-size: 1.5rem;
+            }
+            .app-content {
+                padding: 1em;
+            }
+            .app-details p {
+                font-size: 0.9rem;
+            }
+            .app-download img {
+                width: 160px;
+            }
+            .app-images img {
+                max-width: 170px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>電脳風街</h1>
+        <h2>City Virtual City</h2>
+    </header>
+    <div class="container">
+        <div class="app-title">
+            <h2>乗り鉄コレクト</h2>
+        </div>
+         <div class="app-details">
+            <p>
+                乗り鉄活動に便利な、乗車区間管理アプリです。日本全国の鉄軌道を網羅しています。
+            </p>
+        </div>
+        <div class="app-content">
+            <div class="app-images">
+                <img src="app1.PNG" alt="アプリホーム画面">
+                <img src="app2.PNG" alt="アプリホーム画面">
+            </div>
+             <div class="app-images">
+                <img src="app3.PNG" alt="アプリホーム画面">
+                <img src="app4.PNG" alt="アプリホーム画面">
+            </div>
+            <div class="app-details">
+                <div class="app-download">
+                    <a href="http://apps.apple.com/app/id6738281439">
+                        <img src="appstore.svg" alt="App Storeでダウンロード">
+                    </a>
+                    <br>
+                    <a href="policy.html">プライバシーポリシー</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 City Virtual City
+    </footer>
+</body>
+</html>
